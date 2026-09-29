@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Taskly - To Do App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Header -->
+        <header class="header">
+
+            <div>
+                <p class="small-title">JAVASCRIPT</p>
+
+                <h1>Stay Organized,<br>Stay Productive.</h1>
+
+                <p class="subtitle">
+                    Manage your daily tasks and keep your life organized.
+                </p>
+            </div>
+
+            <div class="date-box">
+                <span id="currentDate"></span>
+            </div>
+
+        </header>
+
+
+        <!-- Add Task -->
+        <section class="add-section">
+
+            <h2>Add a New Task</h2>
+
+            <div class="input-area">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task here..."
+                >
+
+                <button id="addTaskBtn">
+                    + Add Task
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- Statistics -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <h3 id="totalTasks">0</h3>
+                <p>Total Tasks</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="completedTasks">0</h3>
+                <p>Completed</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="pendingTasks">0</h3>
+                <p>Pending</p>
+            </div>
+
+        </section>
+
+
+        <!-- Filters -->
+        <section class="filters">
+
+            <button class="filter active" data-filter="all">
+                All
+            </button>
+
+            <button class="filter" data-filter="active">
+                Active
+            </button>
+
+            <button class="filter" data-filter="completed">
+                Completed
+            </button>
+
+        </section>
+
+
+        <!-- Tasks -->
+        <section class="tasks-section">
+
+            <div class="tasks-heading">
+
+                <h2>My Tasks</h2>
+
+                <span>To-do, done, keep it moving.</span>
+
+            </div>
+
+            <div id="taskList"></div>
+
+        </section>
+
+
+        <!-- Quote -->
+        <div class="quote">
+            "Small tasks today, big achievements tomorrow."
+        </div>
+
+
+        <!-- Footer -->
+        <footer>
+            <p>Taskly • Built with JavaScript</p>
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
